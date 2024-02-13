@@ -191,6 +191,16 @@ local models = {
 	"models/player/icpd/fbi2/male_07.mdl",
 	"models/player/icpd/fbi2/male_08.mdl",
 	"models/player/icpd/fbi2/male_09.mdl",
+	"models/sentry/senvmaf/senmafgoon1pm.mdl",
+	"models/sentry/senvmaf/senmafgoon2pm.mdl",
+	"models/sentry/senvmaf/senmafgoon3pm.mdl",
+	"models/sentry/senvmaf/senrusgoon1pm.mdl",
+	"models/sentry/senvmaf/senrusgoon2pm.mdl",
+	"models/sentry/senvmaf/senrusgoon3pm.mdl",
+	"models/sentry/senvmaf/senvmaf1male9pm.mdl",
+	"models/sentry/senvmaf/senvmaf2male8pm.mdl",
+	"models/sentry/senvmaf/senvmaf3male6pm.mdl",
+	"models/sentry/senvmaf/senvmaf4male2pm.mdl",
 
 	-- Staff
 	
