@@ -10,7 +10,8 @@ FACTION.isDefault = true
 FACTION.pay = 10
 ------------------------------------------------------------------------------------
 FACTION.models = { --TODO
-    "MODEL_NAME",
+	"models/sirgibs/ragdolls/bms_citizens/male_citizen_player.mdl",
+	"models/sirgibs/ragdolls/bms_citizens/female_citizen_player.mdl",
 }
 ------------------------------------------------------------------------------------
 function FACTION:OnCharacterCreated(client, character)

@@ -8,7 +8,8 @@ FACTION.color = Color(102, 17, 11, 255)
 FACTION.isDefault = false
 ------------------------------------------------------------------------------------
 FACTION.models = { --TODO
-    "MODEL_NAME",
+	"models/echo/hl2_antlion_pm.mdl",
+	"models/player/zombie_sci.mdl",
 }
 ------------------------------------------------------------------------------------
 function FACTION:OnCharacterCreated(client, character)

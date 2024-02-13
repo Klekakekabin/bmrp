@@ -10,7 +10,7 @@ FACTION.isDefault = false
 FACTION.pay = 2
 ------------------------------------------------------------------------------------
 FACTION.models = { --TODO
-    "MODEL_NAME",
+    "models/player/infoplayerrealism.mdl",
 }
 ------------------------------------------------------------------------------------
 function FACTION:OnCharacterCreated(client, character)

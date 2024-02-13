@@ -10,7 +10,8 @@ FACTION.isDefault = false
 FACTION.pay = 50
 ------------------------------------------------------------------------------------
 FACTION.models = { --TODO
-    "MODEL_NAME",
+	"models/humans_bmcer/pm/office_worker.mdl",
+	"models/humans/pm/fem_office_worker.mdl",
 }
 ------------------------------------------------------------------------------------
 function FACTION:OnCharacterCreated(client, character)
