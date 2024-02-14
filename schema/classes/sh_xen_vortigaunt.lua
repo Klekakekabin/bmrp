@@ -2,12 +2,12 @@ CLASS.name = "Vortigaunt"
 CLASS.faction = FACTION_XEN
 CLASS.isDefault = false
 CLASS.limit = 3
-CLASS.weapons = {""}
+CLASS.weapons = {"weapon_vortbeam"}
 
 function CLASS:OnSet(client)
     local character = client:GetCharacter()
 	if (character) then
-		character:SetModel("")
+		character:SetModel("models/player/bm_vortigaunt_pm.mdl")
 	end
     
     client:SetHealth(125)

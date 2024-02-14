@@ -1,14 +1,9 @@
 CLASS.name = "Intern"
 CLASS.faction = FACTION_OTA
 CLASS.isDefault = false
-CLASS.weapons = {""}
+CLASS.weapons = {"weapon_bm_flashlight", "gmod_camera", "weapon_vj_flaregun", "weapon_drr_radar"}
 
 function CLASS:OnSet(client)
-    local character = client:GetCharacter()
-	if (character) then
-		character:SetModel("")
-	end
-
     client:SetHealth(100)
     client:SetMaxHealth(100)
     client:SetArmor(0)

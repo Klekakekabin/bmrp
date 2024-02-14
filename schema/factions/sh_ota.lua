@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------
 FACTION.name = "Office of the Administrator"
 ------------------------------------------------------------------------------------
-FACTION.description = "" --TODO
+FACTION.description = "The Office of the Administrator is responsible for the management of the Black Mesa Rsearch Facility under the guidance of the Administrator Wallace Breen."
 ------------------------------------------------------------------------------------
 FACTION.color = Color(51, 51, 51, 255)
 ------------------------------------------------------------------------------------

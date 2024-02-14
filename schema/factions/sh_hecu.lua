@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------
 FACTION.name = "Hazardous Environment Combat Unit"
 ------------------------------------------------------------------------------------
-FACTION.description = "" --TODO
+FACTION.description = "The Hazardous Environment Combat Unit is a United States Marine Corps Special Unit, trained in dealing with dangerous environments and unconventional enemies."
 ------------------------------------------------------------------------------------
 FACTION.color = Color(38, 92, 43, 255)
 ------------------------------------------------------------------------------------

@@ -2,12 +2,12 @@ CLASS.name = "Survey Team"
 CLASS.faction = FACTION_SCIENCE
 CLASS.isDefault = false
 CLASS.limit = 4
-CLASS.weapons = {""}
+CLASS.weapons = {"meleearts_bludgeon_crowbar", "weapon_pathway_marker", "weapon_vj_flaregun", "weapon_industrial_drill", "arccw_go_mp5", "arccw_go_glock", "meleearts_blade_throwingknife"}
 
 function CLASS:OnSet(client)
     local character = client:GetCharacter()
 	if (character) then
-		character:SetModel("")
+		character:SetModel("models/humans_bmcer/pm/scientist.mdl")
 	end
     
     client:SetHealth(100)

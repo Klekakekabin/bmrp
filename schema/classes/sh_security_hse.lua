@@ -2,12 +2,12 @@ CLASS.name = "Head of Security Enforcement"
 CLASS.faction = FACTION_BMSF
 CLASS.isDefault = false
 CLASS.limit = 1
-CLASS.weapons = {""}
+CLASS.weapons = {"arccw_go_nova", "arccw_go_p2000", "weapon_bm_flashlight", "weapon_r_restrains", "weapon_stungun", "arccw_go_nade_flash", "arccw_go_nade_smoke", "meleearts_blade_kabarknife", "arccw_eq_mapaps"}
 
 function CLASS:OnSet(client)
     local character = client:GetCharacter()
 	if (character) then
-		character:SetModel("")
+		character:SetModel("models/humans_bmcer/pm/guard.mdl")
 	end
     
     client:SetHealth(100)

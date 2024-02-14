@@ -2,12 +2,12 @@ CLASS.name = "Alien Grunt"
 CLASS.faction = FACTION_XEN
 CLASS.isDefault = false
 CLASS.limit = 2
-CLASS.weapons = {""}
+CLASS.weapons = {"weapon_bmx_hivehand"}
 
 function CLASS:OnSet(client)
     local character = client:GetCharacter()
 	if (character) then
-		character:SetModel("")
+		character:SetModel("models/player/bm_agrunt.mdl")
 	end
     
     client:SetHealth(400)

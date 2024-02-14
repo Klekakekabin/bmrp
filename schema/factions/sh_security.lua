@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------
 FACTION.name = "Black Mesa Security Force"
 ------------------------------------------------------------------------------------
-FACTION.description = "" --TODO
+FACTION.description = "The Black Mesa Security Force is responsible for upholding law and maintaining the safety of staff at the Black Mesa Research Facility."
 ------------------------------------------------------------------------------------
 FACTION.color = Color(53, 70, 181, 255)
 ------------------------------------------------------------------------------------

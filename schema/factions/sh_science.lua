@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------
 FACTION.name = "Black Mesa Science Team"
 ------------------------------------------------------------------------------------
-FACTION.description = "" --TODO
+FACTION.description = "The Black Mesa Science Team is responsible for new development and discovery at the Black Mesa Research Facility."
 ------------------------------------------------------------------------------------
 FACTION.color = Color(194, 190, 76, 255)
 ------------------------------------------------------------------------------------

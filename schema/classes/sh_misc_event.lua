@@ -5,7 +5,7 @@ CLASS.isDefault = false
 function CLASS:OnSet(client)
     local character = client:GetCharacter()
 	if (character) then
-		character:SetModel("")
+		character:SetModel("models/player/infoplayerrealism.mdl")
 	end
     client:Spawn()
 end

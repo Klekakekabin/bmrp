@@ -2,12 +2,12 @@ CLASS.name = "Antlion"
 CLASS.faction = FACTION_XEN
 CLASS.isDefault = false
 CLASS.limit = 5
-CLASS.weapons = {""}
+CLASS.weapons = {"swep_am_monster"}
 
 function CLASS:OnSet(client)
     local character = client:GetCharacter()
 	if (character) then
-		character:SetModel("")
+		character:SetModel("models/echo/hl2_antlion_pm.mdl")
 	end
     
     client:SetHealth(75)

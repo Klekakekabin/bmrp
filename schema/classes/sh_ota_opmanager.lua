@@ -2,12 +2,12 @@ CLASS.name = "Operations Manager"
 CLASS.faction = FACTION_OTA
 CLASS.isDefault = false
 CLASS.limit = 1
-CLASS.weapons = {""}
+CLASS.weapons = {"weapon_bm_flashlight", "gmod_camera", "weapon_vj_flaregun", "arccw_go_r8", "weapon_r_restrains", "weapon_stungun", "weapon_drr_radar"}
 
 function CLASS:OnSet(client)
     local character = client:GetCharacter()
 	if (character) then
-		character:SetModel("")
+		character:SetModel("models/humans_bmcer/pm/guard_bodyguard.mdl")
 	end
 
     client:SetHealth(100)

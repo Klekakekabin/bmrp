@@ -7,7 +7,7 @@ CLASS.weapons = {""}
 function CLASS:OnSet(client)
     local character = client:GetCharacter()
 	if (character) then
-		character:SetModel("")
+		character:SetModel("models/player/zombie_guard_pm.mdl")
 	end
     
     client:SetHealth(100)

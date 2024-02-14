@@ -1,14 +1,9 @@
 CLASS.name = "Research Associate"
 CLASS.faction = FACTION_SCIENCE
 CLASS.isDefault = false
-CLASS.weapons = {""}
+CLASS.weapons = {"weapon_bm_flashlight", "gmod_camera"}
 
 function CLASS:OnSet(client)
-    local character = client:GetCharacter()
-	if (character) then
-		character:SetModel("")
-	end
-    
     client:SetHealth(100)
     client:SetMaxHealth(100)
     client:SetArmor(0)

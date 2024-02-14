@@ -2,12 +2,12 @@ CLASS.name = "Fireteam Marine"
 CLASS.faction = FACTION_HECU
 CLASS.isDefault = false
 CLASS.limit = 3
-CLASS.weapons = {""}
+CLASS.weapons = {"arccw_go_sg556", "arccw_go_usp", "meleearts_blade_throwingknife", "weapon_vj_flaregun", "arccw_go_nade_smoke", "weapon_breachingcharge", "weapon_bm_flashlight_milit", "weapon_rpw_binoculars", "weapon_bm_tripmine"}
 
 function CLASS:OnSet(client)
     local character = client:GetCharacter()
 	if (character) then
-		character:SetModel("")
+		character:SetModel("models/humans/pm/marine.mdl")
 	end
     
     client:SetHealth(100)

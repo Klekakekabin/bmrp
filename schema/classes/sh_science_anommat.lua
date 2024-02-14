@@ -2,12 +2,12 @@ CLASS.name = "Anomalous Materials"
 CLASS.faction = FACTION_SCIENCE
 CLASS.isDefault = false
 CLASS.limit = 5
-CLASS.weapons = {""}
+CLASS.weapons = {"weapon_bm_flashlight", "weapon_fextinguisher", "meleearts_axe_crafted", "weapon_bm_reflector", "gmod_camera", "weapon_physcannon"}
 
 function CLASS:OnSet(client)
     local character = client:GetCharacter()
 	if (character) then
-		character:SetModel("")
+		character:SetModel("models/humans_bmcer/pm/scientist.mdl")
 	end
     
     client:SetHealth(100)

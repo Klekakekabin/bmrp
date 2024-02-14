@@ -1,13 +1,13 @@
-CLASS.name = "Security Gaurd"
+CLASS.name = "Security Guard"
 CLASS.faction = FACTION_BMSF
 CLASS.isDefault = false
 CLASS.limit = 8
-CLASS.weapons = {""}
+CLASS.weapons = {"arccw_go_fiveseven", "weapon_bm_flashlight", "weapon_r_restrains", "weapon_stungun", "meleearts_blade_kabarknife"}
 
 function CLASS:OnSet(client)
     local character = client:GetCharacter()
 	if (character) then
-		character:SetModel("")
+		character:SetModel("models/humans_bmcer/pm/guard.mdl")
 	end
     
     client:SetHealth(100)
@@ -23,4 +23,4 @@ function CLASS:CanSwitchTo(client)
     return client:HasClassWhitelist(self.index)
 end
 
-CLASS_GAURD = CLASS.index
+CLASS_GUARD = CLASS.index

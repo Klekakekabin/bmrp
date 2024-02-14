@@ -2,12 +2,12 @@ CLASS.name = "Xen Controller"
 CLASS.faction = FACTION_XEN
 CLASS.isDefault = false
 CLASS.limit = 1
-CLASS.weapons = {""}
+CLASS.weapons = {"weapon_bmx_controllerhand", "weapon_officerboost_normal", "weapon_officerboost_laststand"}
 
 function CLASS:OnSet(client)
     local character = client:GetCharacter()
 	if (character) then
-		character:SetModel("")
+		character:SetModel("models/player/bm_controller_pm.mdl")
 	end
     
     client:SetHealth(300)

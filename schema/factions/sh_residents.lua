@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------
 FACTION.name = "Black Mesa Residents"
 ------------------------------------------------------------------------------------
-FACTION.description = "" --TODO
+FACTION.description = "The residents of the Black Mesa Research Facility, located in the New Mexico desert."
 ------------------------------------------------------------------------------------
 FACTION.color = Color(227, 90, 27, 255)
 ------------------------------------------------------------------------------------
@@ -10,8 +10,8 @@ FACTION.isDefault = true
 FACTION.pay = 10
 ------------------------------------------------------------------------------------
 FACTION.models = { --TODO
-	"models/sirgibs/ragdolls/bms_citizens/male_citizen_player.mdl",
-	"models/sirgibs/ragdolls/bms_citizens/female_citizen_player.mdl",
+	"models/humans_bmcer/pm/office_worker.mdl",
+	"models/humans/pm/fem_office_worker.mdl",
 }
 ------------------------------------------------------------------------------------
 function FACTION:OnCharacterCreated(client, character)

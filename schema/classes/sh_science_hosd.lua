@@ -2,12 +2,12 @@ CLASS.name = "Head of Science & Discovery"
 CLASS.faction = FACTION_SCIENCE
 CLASS.isDefault = false
 CLASS.limit = 1
-CLASS.weapons = {""}
+CLASS.weapons = {"weapon_bm_flashlight", "weapon_fextinguisher", "meleearts_bludgeon_crowbar", "meleearts_axe_crafted", "weapon_lvsrepair", "weapon_industrial_drill", "weapon_bm_reflector", "gmod_camera", "weapon_physcannon"}
 
 function CLASS:OnSet(client)
     local character = client:GetCharacter()
 	if (character) then
-		character:SetModel("")
+		character:SetModel("models/humans_bmcer/pm/scientist.mdl")
 	end
     
     client:SetHealth(100)
