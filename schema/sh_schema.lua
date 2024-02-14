@@ -1,9 +1,9 @@
 ------------------------------------------------------------------------------------
-Schema.name = "Black Mesa Roleplay"
+Schema.name = "Tropic Gaming"
 ------------------------------------------------------------------------------------
 Schema.author = "Tropic Gaming"
 ------------------------------------------------------------------------------------
-Schema.description = "A serious roleplay set in the Half-Life universe."
+Schema.description = "Black Mesa Roleplay"
 ------------------------------------------------------------------------------------
 ix.util.Include("sh_anim.lua") -- Used for animations 
 ------------------------------------------------------------------------------------
