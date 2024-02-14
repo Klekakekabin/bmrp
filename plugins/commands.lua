@@ -20,64 +20,11 @@ if (CLIENT) then
 end
 
 -- Show ID
-ix.command.Add("ShowID", {
-	OnRun = function(self, client)
-		local item
-		
-		client.found = false
-		for k, v in pairs( client:GetCharacter():GetInv():GetItems() ) do
-			if ( v.uniqueID == "keycard" ) then
-				client.found = true
-				item = v
-			end
-		end
-		
-		if not client.found then
-			client:Notify( "You must have a keycard to show your identification." )
-			return
-		end
-		
-		local job = ix.class.list[client:GetCharacter():GetClass()].name
-		if not client:GetCharacter():GetClass() then
-			job = team.GetName(character:GetFaction())
-		end
-		
-		local clearances = client:GetCharacter():GetData("clearances")
-		if not clearances then
-			clearances = "0"
-		end
-		
-		local final = " | " .. job .. " | Levels: " .. clearances
-		local target = client:GetEyeTrace().Entity
-		
-		if not IsValid(target) then
-			client:Notify("You must face a player!")
-		else
-			ix.chat.Send(client, "showid", final, false, {client, target})
-			client:ConCommand("say /me shows their ID.")
-		end
-	end
-})
-
 ix.chat.Register("ShowID", {
 	format = "[ID CARD] %s %s",
 	color = Color(255, 93, 0),
 	filter = "showid",
 	deadCanChat = true
-})
-
--- Speakers
-ix.chat.Register("Speakers", {
-	prefix = {"/s", "/Speakers"},
-	CanSay = function(self, speaker, text)
-        if not (speaker:IsStaff() or speaker:HasClearances("A")) then
-            speaker:Notify("Only Administration can use the speakers!")
-            return false
-        end
-    end,
-	OnChatAdd = function(self, speaker, text)
-		chat.AddText(Color(220, 0, 255), "Speakers: <:: \"" .. text .. "\" ::>")
-	end
 })
 
 -- Allows players to communicate via the pager
@@ -110,96 +57,6 @@ ix.chat.Register("page", {
 	color = Color(64, 127, 250),
 	filter = "page",
 	deadCanChat = false
-})
-
--- Alarms
-ix.command.Add("Alarms", {
-	description = "Trigger facility alarms.",
-	OnCheckAccess = function(self, client)
-		return client:IsStaff() or client:HasClearances("A")
-	end,
-	OnRun = function(self, client)
-		SetGlobalBool("alarm", !GetGlobalBool("alarm"), false)
-		ents.FindByName("alarm_toggle")[1]:Fire("Trigger", "", 0)
-		ents.FindByName("rotate_alarm")[1]:Fire(GetGlobalBool("alarm", false) and "FireUser1" or "FireUser2", "", 0.1)
-		client:Notify("You have triggered the alarms.")
-	end
-})
-
--- Fire Alarms
-ix.command.Add("FireAlarms", {
-	description = "Trigger fire alarms.",
-	OnCheckAccess = function(self, client)
-		return client:IsStaff() or client:HasClearances("A") or false
-	end,
-	OnRun = function(self, client)
-		SetGlobalBool("fireAlarm", !GetGlobalBool("fireAlarm", false))
-		local alarmActive = GetGlobalBool("fireAlarm")
-
-		ents.FindByName("firealarm_toggle")[1]:Fire(alarmActive and "FireUser1" or "FireUser2", "", 0)
-
-		for _, alarm in pairs(ents.FindByName("firealarm_indicator_default")) do
-			if (alarmActive) then
-				alarm:EmitSound("bms_objects/alarms/alarm5.wav")
-			else
-				alarm:StopSound("bms_objects/alarms/alarm5.wav")
-			end
-		end
-
-		client:Notify("You have triggered the alarms.")
-	end
-})
-
--- Medical Containment
-ix.command.Add("MedContainment", {
-	description = "Toggle medical containment.",
-	OnCheckAccess = function(self, client)
-		return client:IsStaff() or client:HasClearances("A")
-	end,
-	OnRun = function(self, client)
-		ents.FindByName("clinical_containment_toggle")[1]:Fire("Trigger", "", 0)
-		client:Notify("You have toggled the medical containment.")
-	end
-})
-
--- Fire Doors
-local firedoors = {[1] = "frdr_lvl1", [2] = "frdr_lvl2", [3] = "frdr_lvl3"}
-
-ix.command.Add("FireDoor", {
-	description = "Trigger a fire door.",
-	arguments = {
-		ix.type.string
-	},
-	OnCheckAccess = function(self, client)
-		return client:IsStaff() or client:HasClearances("A") or false
-	end,
-	OnRun = function(self, client, doorNumber)
-		if doorNumber == "all" then
-			for k,v in pairs(ents.FindByName("frdr_*")) do
-				v:Fire("toggle", "", 0)
-			end
-		elseif not tonumber(doorNumber) or tonumber(doorNumber) > 3 then
-			client:Notify("Arguments required number door 1 - 3 or all.")
-		else
-			ents.FindByName(firedoors[tonumber(doorNumber)])[1]:Fire("toggle", "", 0)
-		end
-	end
-})
-
--- Manage Portal Stages
-ix.command.Add("PortalStage", {
-	staffOnly = true,
-	description = "Trigger a portal stage.",
-	arguments = {
-		ix.type.string
-	},
-	OnRun = function(self, client, stage)
-        if stage == "stop" then
-            ents.FindByName("portal_stop")[1]:Fire("Trigger", "", 0)
-        else
-            ents.FindByName("portal_stage" .. stage)[1]:Fire("Trigger", "", 0)
-		end
-	end
 })
 
 -- Remove Item
@@ -256,7 +113,7 @@ ix.command.Add("Search", {
 		
 		local target = util.TraceLine(data).Entity
 		
-		if (IsValid(target) and target:IsPlayer() and target:IsRestricted() and client:Team() == FACTION_SECURITY) then
+		if (IsValid(target) and target:IsPlayer() and target:IsRestricted() and client:Team() == FACTION_BMSF) then
 			if (!client:IsRestricted()) then
 				Schema:SearchPlayer(client, target)
 			else
@@ -270,7 +127,7 @@ ix.command.Add("Search", {
 ix.command.Add("DoorKick", {
 	description = "Kick a door open.",
 	OnRun = function(self, client)
-		if (client:Team() == FACTION_SECURITY) then
+		if (client:Team() == FACTION_BMSF) then
             local aimVector = client:GetAimVector()
 			
             local data = {}
@@ -342,24 +199,17 @@ ix.command.Add("VOXSound", {
 	end
 })
 
--- Forums
-ix.command.Add("Forums", {
-	OnRun = function(self, client)
-		client:SendLua([[gui.OpenURL("https://forums.limefruit.net")]])
-	end
-})
-
 -- Discord
 ix.command.Add("Discord", {
 	OnRun = function(self, client)
-		client:SendLua([[gui.OpenURL("https://discord.gg/DKfDfut4wm")]])
+		client:SendLua([[gui.OpenURL("https://discord.gg/DaX5N6qYTp")]])
 	end
 })
 
 -- Content
 ix.command.Add("Content", {
 	OnRun = function(self, client)
-		client:SendLua([[gui.OpenURL("https://steamcommunity.com/workshop/filedetails/?id=2876769554")]])
+		client:SendLua([[gui.OpenURL("https://steamcommunity.com/sharedfiles/filedetails/?id=3136626521")]])
 	end
 })
 
