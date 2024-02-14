@@ -1,5 +1,5 @@
-CLASS.name = "Operations Manager"
-CLASS.faction = FACTION_OTA
+CLASS.name = "Head of Science & Discovery"
+CLASS.faction = FACTION_SCIENCE
 CLASS.isDefault = false
 CLASS.limit = 1
 CLASS.weapons = {""}
@@ -9,10 +9,10 @@ function CLASS:OnSet(client)
 	if (character) then
 		character:SetModel("")
 	end
-
+    
     client:SetHealth(100)
     client:SetMaxHealth(100)
-    client:SetArmor(50)
+    client:SetArmor(0)
     client:SetMaxArmor(0)
     client:SetSlowWalkSpeed(100)
     client:SetWalkSpeed(160)
@@ -23,4 +23,4 @@ function CLASS:CanSwitchTo(client)
     return client:HasClassWhitelist(self.index)
 end
 
-CLASS_OPMANAGER = CLASS.index
+CLASS_HOSD = CLASS.index
