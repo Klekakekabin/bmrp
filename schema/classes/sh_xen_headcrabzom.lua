@@ -2,7 +2,7 @@ CLASS.name = "Headcrab Zombie"
 CLASS.faction = FACTION_XEN
 CLASS.isDefault = false
 CLASS.limit = 3
-CLASS.weapons = {""}
+CLASS.weapons = {"weapon_sillyzombieclaw"}
 
 function CLASS:OnSet(client)
     local character = client:GetCharacter()
