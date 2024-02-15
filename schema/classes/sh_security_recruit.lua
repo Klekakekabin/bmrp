@@ -1,7 +1,7 @@
 CLASS.name = "Security Recruit"
 CLASS.faction = FACTION_BMSF
 CLASS.isDefault = false
-CLASS.weapons = {"weapon_bm_flashlight", "weapon_r_restrains", "weapon_stungun", "meleearts_blade_kabarknife"}
+CLASS.weapons = {"weapon_bm_flashlight", "weapon_stungun", "meleearts_blade_kabarknife"}
 
 function CLASS:OnSet(client)
     client:SetHealth(100)
