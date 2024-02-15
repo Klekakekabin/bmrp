@@ -5,7 +5,7 @@ ITEM.width = 1
 ITEM.height = 2
 ITEM.description = "A standard flashlight that can be toggled."
 ITEM.category = "Tools"
-ITEM.price = 5
+ITEM.nobusiness = true
 ITEM.weight = 1
 
 ITEM:Hook("drop", function(item)

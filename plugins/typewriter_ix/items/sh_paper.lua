@@ -4,6 +4,7 @@ ITEM.model = "models/props_lab/clipboard.mdl"
 ITEM.width = 1
 ITEM.height = 1
 ITEM.weight = 0.1
+ITEM.nobusiness = true
 
 ITEM.functions.View = {
 	name = "View",

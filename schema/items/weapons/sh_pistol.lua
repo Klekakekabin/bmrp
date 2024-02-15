@@ -1,9 +1,0 @@
-ITEM.name = "M9"
-ITEM.description = "A standard issue pistol given to most Foundation personnel"
-ITEM.model = "models/weapons/w_pist_elite_single.mdl"
-ITEM.class = "arccw_mw2_m9"
-ITEM.weaponCategory = "sidearm"
-ITEM.width = 2
-ITEM.height = 1
-ITEM.weight = 1.5
-ITEM.price = 2500

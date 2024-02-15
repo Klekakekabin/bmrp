@@ -4,7 +4,7 @@ ITEM.model = "models/props_c17/cashregister01a.mdl"
 ITEM.width = 2
 ITEM.height = 2
 ITEM.category = "Documents"
-ITEM.price = 250
+ITEM.nobusiness = true
 ITEM.weight = 5
 
 ITEM.functions.Use = {

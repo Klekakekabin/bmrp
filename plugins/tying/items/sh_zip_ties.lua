@@ -1,7 +1,7 @@
 local PLUGIN = PLUGIN
 ITEM.name = "Zip Tie"
 ITEM.description = "An orange zip-tie used to restrict people."
-ITEM.price = 8
+ITEM.nobusiness = true
 ITEM.model = "models/items/crossbowrounds.mdl"
 ITEM.functions.Use = {
 	OnRun = function(itemTable)
