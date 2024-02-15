@@ -42,7 +42,7 @@ netstream.Hook("computerGetAgenda", function(tblAgenda)
     local view = ""
     local agendaItems = ""
 
-    if LocalPlayer():HasClearances("A") then
+    if LocalPlayer():GetCharacter():GetFaction() == "FACTION_OTA" then
         view = [[
             <h2>Add Submission</h2>
 

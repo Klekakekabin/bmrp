@@ -24,7 +24,7 @@ ix.computers.AddLog = function(target, name, event, time)
 end
 
 netstream.Hook("computerGetLogs", function(client, char)
-	if (!client:HasClearances("A")) then return end
+	if (!client:LocalPlayer():GetCharacter():GetFaction() == "FACTION_OTA") then return end
 
 	local filePath = path .. "/" .. char .. "_logs.txt"
 	local data = file.Exists(filePath, "DATA") and util.JSONToTable(file.Read(filePath)) or {}
@@ -35,7 +35,7 @@ netstream.Hook("computerGetLogs", function(client, char)
 end)
 
 netstream.Hook("computerGetData", function(client, char)
-	if (!client:HasClearances("A")) then return end
+	if (!client:LocalPlayer():GetCharacter():GetFaction() == "FACTION_OTA") then return end
 
 	for k, v in pairs(player.GetAll()) do
 		local character = v:GetCharacter()
@@ -60,7 +60,7 @@ end)
 
 -- Access.
 netstream.Hook("computerSetClearances", function(client, char, data, clearances)
-	if (!client:HasClearances("A")) then return end
+	if (!client:LocalPlayer():GetCharacter():GetFaction() == "FACTION_OTA") then return end
 
 	local target = nil
 	char = tonumber(char)
@@ -95,7 +95,7 @@ end)
 
 -- Licenses.
 netstream.Hook("computerGetLicenses", function(client, char)
-	if (!client:HasClearances("A")) then return end
+	if (!client:LocalPlayer():GetCharacter():GetFaction() == "FACTION_OTA") then return end
 
 	local filePath = path .. "/" .. char .. ".txt"
 	local data = file.Exists(filePath, "DATA") and util.JSONToTable(file.Read(filePath)) or {}
@@ -106,7 +106,7 @@ netstream.Hook("computerGetLicenses", function(client, char)
 end)
 
 netstream.Hook("computerSetLicenses", function(client, char, tblLicenses)
-	if (!client:HasClearances("A")) then return end
+	if (!client:LocalPlayer():GetCharacter():GetFaction() == "FACTION_OTA") then return end
 	file.Write(path .. "/" .. char .. ".txt", util.TableToJSON(tblLicenses))
 end)
 
@@ -119,7 +119,7 @@ local function getJournals(char)
 end
 
 netstream.Hook("computerGetJournals", function(client, char)
-	if (!client:HasClearances("A")) then return end
+	if (!client:LocalPlayer():GetCharacter():GetFaction() == "FACTION_OTA") then return end
 	local journals = getJournals(char)
 	if (#journals < 1) then return end
 	netstream.Start(client, "computerGetJournals", istable(journals) and journals or {})
@@ -128,7 +128,7 @@ end)
 netstream.Hook("computerSetJournal", function(client, char, iJournal, text)
 	local author = client:GetCharacter():GetID()
 
-	if not client:HasClearances("A") then return end
+	if not client:LocalPlayer():GetCharacter():GetFaction() == "FACTION_OTA" then return end
 	local journals = getJournals(char)
 	if not journals[iJournal] or journals[iJournal].author != author then return end
 
@@ -138,7 +138,7 @@ netstream.Hook("computerSetJournal", function(client, char, iJournal, text)
 end)
 
 netstream.Hook("computerCreateJournal", function(client, char, text)
-	if (!client:HasClearances("A")) then return end
+	if (!client:LocalPlayer():GetCharacter():GetFaction() == "FACTION_OTA") then return end
 
 	local journals = getJournals(char)
 	local thisJournal = {author=client:GetCharacter():GetID(), text=text, time=os.time()}
@@ -154,7 +154,7 @@ netstream.Hook("computerCreateJournal", function(client, char, text)
 end)
 
 netstream.Hook("computerRemoveJournal", function(client, char, iJournal)
-	if (!client:HasClearances("A")) then return end
+	if (!client:LocalPlayer():GetCharacter():GetFaction() == "FACTION_OTA") then return end
 	local journals = getJournals(char)
 	if not journals[iJournal] then return end
 

@@ -13,7 +13,7 @@ PROGRAM.order = 7
 PROGRAM.name = "Adverts"
 PROGRAM.icon = "icon16/information.png"
 PROGRAM.size = {x = 400, y = 500}
-PROGRAM.permission = function() return LocalPlayer():HasClearances("A") end
+PROGRAM.permission = function() return LocalPlayer():GetCharacter():GetFaction() == "FACTION_OTA" end
 
 if CLIENT then
 	local program

@@ -14,7 +14,7 @@ if not file.Exists(path, "DATA") then
 end
 
 netstream.Hook("computerScheduleAgendaItem", function(ply, title, text, time)
-	if not ply:HasClearances("A") then return end
+	if not LocalPlayer():GetCharacter():GetFaction() == "FACTION_OTA" then return end
 
 	local filePath = path .. "/agenda.txt"
 	local tblAgendaItem = {char=ply:GetCharacter():GetID(), author=ply:GetName(), title=title, text=text, time=string.Replace(time, "T", " ")}
@@ -47,7 +47,7 @@ netstream.Hook("computerGetAgenda", function(ply)
 end)
 
 netstream.Hook("computerRemoveAgendaItem", function(ply, id)
-	if not ply:HasClearances("A") then return end
+	if not LocalPlayer():GetCharacter():GetFaction() == "FACTION_OTA" then return end
 
 	local filePath = path .. "/agenda.txt"
 

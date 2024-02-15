@@ -39,7 +39,7 @@ if CLIENT then
             PLUGIN:runProgram("search", PROGRAM.SendNewMail, true)
         end
 
-        if LocalPlayer():HasClearances("A") then
+        if LocalPlayer():GetCharacter():GetFaction() == "FACTION_OTA" then
             local newMailFactionBtn = bottomDocker:Add("DButton")
             newMailFactionBtn:Dock(BOTTOM)
             newMailFactionBtn:DockMargin(0, 2, 0, 0)
@@ -163,7 +163,7 @@ if CLIENT then
         local person
         if multiSelect then
             -- multiple lines selected
-            if #char > 3 and not LocalPlayer():HasClearances("A") then
+            if #char > 3 and not LocalPlayer():GetCharacter():GetFaction() == "FACTION_OTA" then
                 PLUGIN:runProgram("popup", "Mail", "You are not allowed to send email to more than 3 staff")
                 return
             end
