@@ -1,16 +1,16 @@
-ITEM.name = "Flood Light"
-ITEM.description = "A Flood Light capable of illuminating large areas."
-ITEM.model = "models/props_c17/light_floodlight02_off.mdl"
-ITEM.width = 3
-ITEM.height = 3
+ITEM.name = "Battery"
+ITEM.description = "A battery used to charge the Hazardous Environment suit."
+ITEM.model = "models/weapons/w_battery.mdl"
+ITEM.width = 2
+ITEM.height = 2
 ITEM.noBusiness = true
-ITEM.weight = 15
+ITEM.weight = 3
 
 ITEM.functions.Place = {
     OnRun = function( item )
         local client = item.player
         local trace = client:GetEyeTraceNoCursor()
-        local entity = ents.Create("bmrp_floodlight")
+        local entity = ents.Create("ent_item_battery")
 
         entity:SetModel(item.model)
 		entity:SetPos(trace.HitPos)

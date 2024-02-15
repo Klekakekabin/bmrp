@@ -7,37 +7,30 @@ ITEM.name = "Black Mesa Emergency Protocols";
 ITEM.description = "A green book with a Black Mesa symbol on it.";
 ITEM.model = Model("models/props_lab/bindergreenlabel.mdl");
 ITEM.cost = 6;
+ITEM.weight = 0.4
 ITEM.uniqueID = "book_ab";
 ITEM.noBusiness = true;
 ITEM.bookInformation = [[
-<h2>Black Mesa Protocols</h2>
+<h2>Black Mesa Safety Protocols</h2>
 <h3>Protocols which should be followed if an emergency occurs.</h3>
-<h4><font color='gray'>By: Eric Greenman</font></h4>
+<h4><font color='gray'>By: Dr. Rosenberg.</font></h4>
 
 This book will be an emergency guide if an emergency occurs.
-The book is authorized and made in association with the security department.
-If not followed, serious injuries and possible death may happen.
-This book is to prevent any resonance cascade.
+The book is authorized and made in association with the Office of the Administrator.
+If not followed, serious injuries may occur.
 
 -Behaviour-
-*We reccomend stayin calm and do what this book tells you or any other personell if the emergency is going on.
-*Do not attempt to deal with the problem yourself, the HECU will be involved if needed.
+*We recommend staying calm and do what this protocol instructs, and follow the guidance of senior personnel if an emergency is going on.
+*Do not attempt to deal with the problem yourself and communicate all threats.
+*Contact the United States Marine Corps if the situation escalates.
 
--Evacuation procedures-
-*If any forms of danger is transmitted, then you should procceed to the reception immediately. If not possible, do not attempt
-to find any other route. Call it in and the security will be on the move.
-*Do not exit the facility other than the designated evacuation points.
+-Evacuation Procedures-
+*If any forms of danger is transmitted, then you should procceed to request security for assistance and remain in place until notified the area is safe.
+*In the case of the fire alarm being activated, exit via your nearest fire escape. If you do not know the location of the fire escape in your sector, contact your sector Risk Consultant.
+*Do not congregate outside of the facility other than at the designated evacuation points.
 *Wait for the heli-extraction at the landing zone outside the facility when told.
 
--Known Cascades-
-*Earthquake
-*Bioleak
-*Lazerhazard
-*Xen breach
-*Gasleaks or explosions
-*Fire
-*Terror actions
 
 We hope reading this guide made you prepared for any unforseen cascades.
-Signed: "Research associate: Eric Greenman" and "Facility administrator: Dr. Wallace B."
+Signed: "Deputy Head of Department: Dr. Rosenberg" and "Facility Administrator: Dr. Wallace B."
 ]];

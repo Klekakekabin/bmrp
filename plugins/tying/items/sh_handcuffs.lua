@@ -2,6 +2,7 @@ local PLUGIN = PLUGIN
 ITEM.name = "Handcuffs"
 ITEM.description = "They comprise two parts, linked together by a rigid bar. Each half has a rotating arm which engages with a ratchet."
 ITEM.noBusiness = true
+ITEM.weight = 1.5
 ITEM.model = "models/katharsmodels/handcuffs/handcuffs-1.mdl"
 ITEM.functions.Use = {
 	OnRun = function(itemTable)

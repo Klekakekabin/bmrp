@@ -19,14 +19,6 @@ if (CLIENT) then
 	end)
 end
 
--- Show ID
-ix.chat.Register("ShowID", {
-	format = "[ID CARD] %s %s",
-	color = Color(255, 93, 0),
-	filter = "showid",
-	deadCanChat = true
-})
-
 -- Allows players to communicate via the pager
 ix.command.Add("Page", {
 	description = "@cmdPM",

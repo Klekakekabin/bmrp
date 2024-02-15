@@ -8,6 +8,7 @@ ITEM.noBusiness = true
 ITEM.model = Model("models/ryu-gi/holiday_props/valentine/vday_card.mdl")
 ITEM.width = 1
 ITEM.height = 1
+ITEM.weight = 0.3
 ITEM.bAllowMultiCharacterInteraction = true
 
 function ITEM:GetDescription()

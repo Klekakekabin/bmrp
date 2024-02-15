@@ -18,9 +18,9 @@ function FACTION:OnCharacterCreated(client, character)
 	local id = Schema:ZeroNumber(math.random(1, 99999), 5)
 	local inventory = character:GetInventory()
 
-	character:SetData("cid", id)
+	character:SetData("vid", id)
 
-	inventory:Add("cid", 1, {
+	inventory:Add("vid", 1, {
 		name = character:GetName(),
 		id = id
 	})
@@ -31,7 +31,7 @@ function FACTION:OnSpawn(client)
 	local inv = char:GetInventory()
 
 	-- Declare table 
-	local itemFilter = {'cid'} -- ad anyting else
+	local itemFilter = {'vid'} -- ad anyting else
 	-- First use HasItems takes in a table
 	if not inv:HasItems(itemFilter) then
 		local id = Schema:ZeroNumber(math.random(1, 99999), 5)
@@ -39,7 +39,7 @@ function FACTION:OnSpawn(client)
 		--	inv:Add(v, 1)
 		--end
 
-	    inv:Add("cid", 1, { 
+	    inv:Add("vid", 1, { 
             name = char:GetName(),
             id = id
 	    })

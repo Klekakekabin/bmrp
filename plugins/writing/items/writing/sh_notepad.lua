@@ -7,6 +7,7 @@ ITEM.description = "A notepad that you can write on."
 ITEM.noBusiness = true
 ITEM.model = Model("models/props_office/notepad_office.mdl")
 ITEM.width = 1
+ITEM.weight = 0.5
 ITEM.height = 1
 ITEM.bAllowMultiCharacterInteraction = true
 

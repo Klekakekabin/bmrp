@@ -12,6 +12,7 @@ ITEM.category = "Literature"
 ITEM.model = Model("models/props_lab/bindergreenlabel.mdl")
 ITEM.width = 1
 ITEM.height = 1
+ITEM.weight = 0.3
 ITEM.bAllowMultiCharacterInteraction = true
 
 ITEM.functions.View = {
