@@ -33,10 +33,6 @@ if CLIENT then
         local curChar = LocalPlayer():GetCharacter():GetID()
         for k, v in pairs(characters) do
             if v.id == curChar then continue end
-
-            if text == nil or text == "" or string.find(string.lower(v.name), string.lower(text)) then
-                resultList:AddLine(v.name, string.FirstToUpper(v.faction), v.id)
-            end
         end
     end
 

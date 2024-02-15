@@ -2,7 +2,7 @@ CLASS.name = "Security Officer"
 CLASS.faction = FACTION_BMSF
 CLASS.isDefault = false
 CLASS.limit = 2
-CLASS.weapons = {"arccw_go_nova", "arccw_go_p2000", "weapon_bm_flashlight", "weapon_r_restrains", "weapon_stungun", "meleearts_blade_kabarknife"}
+CLASS.weapons = {"arccw_go_nova", "arccw_go_p2000", "weapon_bm_flashlight", "weapon_stungun", "meleearts_blade_kabarknife"}
 
 function CLASS:OnSet(client)
     local character = client:GetCharacter()

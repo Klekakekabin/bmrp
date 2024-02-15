@@ -13,7 +13,7 @@ PROGRAM.order = 8
 PROGRAM.name = "Database"
 PROGRAM.icon = "icon16/folder_user.png"
 PROGRAM.size = {x = 500, y = 600}
-PROGRAM.permission = function() return LocalPlayer():HasClearances("A") end
+PROGRAM.permission = function() return LocalPlayer():GetCharacter():GetFaction() == "FACTION_OTA" end
 
 PROGRAM.licenses = {"HEV", "Taser", "Firearms"}
 PROGRAM.clearances = {["A"] = "Administration", ["B"] = "Biology", ["P"] = "Physics", ["S"] = "Security", ["X"] = "Xenian", ["1"] = "Level 1", ["2"] = "Level 2", ["3"] = "Level 3", ["4"] = "Level 4", ["5"] = "Level 5"}
@@ -23,7 +23,7 @@ if CLIENT then
 
 	local function IsAdministration()
 		local faction = LocalPlayer():GetCharacter():GetFaction()
-		return (faction == FACTION_OTA) or false
+		return (faction == FACTION_ADMINISTRATION or faction == FACTION_DIRECTOR) or false
 	end
 
 	function PROGRAM.build(...)
