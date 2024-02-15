@@ -3,7 +3,7 @@ ITEM.description = "A Flood Light capable of illuminating large areas."
 ITEM.model = "models/props_c17/light_floodlight02_off.mdl"
 ITEM.width = 1
 ITEM.height = 1
-ITEM.nobusiness = true
+ITEM.noBusiness = true
 
 ITEM.functions.Place = {
     OnRun = function( item )

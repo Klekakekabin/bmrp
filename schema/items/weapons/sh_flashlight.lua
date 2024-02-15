@@ -6,5 +6,5 @@ ITEM.weaponCategory = "utility"
 ITEM.width = 2
 ITEM.height = 1
 ITEM.weight = 0.3
-ITEM.nobusiness = true
+ITEM.noBusiness = true
 
