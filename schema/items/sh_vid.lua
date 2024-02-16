@@ -1,4 +1,3 @@
--- Gonna change this later
 ITEM.name = "Black Mesa Visitor Pass"
 ITEM.model = Model("models/props_tse/props_basement/key_card01.mdl")
 ITEM.description = "A visitor pass for the Black Mesa Research Facility, numbered Visitor #%s, assigned to %s."

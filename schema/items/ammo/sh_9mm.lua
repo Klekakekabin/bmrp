@@ -1,9 +1,8 @@
-ITEM.name = "9MM Ammo"
+ITEM.name = "Small Calibre Ammunition"
 ITEM.model = "models/Items/BoxSRounds.mdl"
 ITEM.ammo = "Pistol"
 ITEM.ammoAmmount = "45"
-ITEM.description = "A Box that contains %s of Ammo"
+ITEM.description = "A box that contains %s of ammo."
 ITEM.category = "Ammunition"
-ITEM.flag = "y"
 ITEM.width = 1
 ITEM.height = 1
