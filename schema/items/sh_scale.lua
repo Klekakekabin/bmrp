@@ -1,8 +1,8 @@
 ITEM.name = "Scale"
 ITEM.description = "Used to measure weight in a laboratory setting."
-ITEM.model = "models/props_am/scale.mdl"
+ITEM.model = "models/props_generic/bm_supplycrate01.mdl"
 ITEM.width = 2
-ITEM.height = 1
+ITEM.height = 2
 ITEM.noBusiness = true
 ITEM.weight = 3.5
 

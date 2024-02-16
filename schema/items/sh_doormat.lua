@@ -2,7 +2,7 @@ ITEM.name = "Door Mat"
 ITEM.description = "A door mat decorated with the symbol of the Black Mesa Research Facility."
 ITEM.model = "models/props_generic/bm_supplycrate01.mdl"
 ITEM.width = 2
-ITEM.height = 1
+ITEM.height = 2
 ITEM.noBusiness = true
 ITEM.weight = 0.8
 

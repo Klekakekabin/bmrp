@@ -34,7 +34,7 @@ if CLIENT then
 
 		local faction = LocalPlayer():GetCharacter():GetFaction()
 		for advertID, advert in SortedPairsByMemberValue(ix.plugin.list["adverts"].adverts, "time", true) do
-			if not LocalPlayer():IsAdmin() and faction ~= FACTION_DIRECTOR and faction ~= FACTION_ADMINISTRATION and advert.char ~= LocalPlayer():GetCharacter():GetID() then continue end
+			if not LocalPlayer():IsAdmin() and faction ~= FACTION_OTA and advert.char ~= LocalPlayer():GetCharacter():GetID() then continue end
 			adverts:AddLine(advert.title, advert.author, string.NiceTime(os.time() - advert.time) .. " ago", advert.text, advert.image, advertID)
 		end
 

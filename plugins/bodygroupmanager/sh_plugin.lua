@@ -11,7 +11,7 @@ ix.lang.AddTable("english", {
 
 ix.command.Add("CharEditBodygroup", {
 	description = "@cmdEditBodygroup",
-	adminOnly = true,
+	adminOnly = false,
 	arguments = {
 		bit.bor(ix.type.player, ix.type.optional)
 	},

@@ -23,7 +23,7 @@ if CLIENT then
 
 	local function IsAdministration()
 		local faction = LocalPlayer():GetCharacter():GetFaction()
-		return (faction == FACTION_ADMINISTRATION or faction == FACTION_DIRECTOR) or false
+		return (faction == FACTION_OTA) or false
 	end
 
 	function PROGRAM.build(...)

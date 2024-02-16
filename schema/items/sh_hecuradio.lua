@@ -1,8 +1,8 @@
 ITEM.name = "HECU Radio"
 ITEM.description = "A radio utilised by the United States Marine Corps' Hazardous Environment Combat Unit."
-ITEM.model = "models/props_marines/army_radio.mdl"
+ITEM.model = "models/props_generic/bm_supplycrate01.mdl"
 ITEM.width = 2
-ITEM.height = 3
+ITEM.height = 2
 ITEM.noBusiness = true
 ITEM.weight = 8
 
