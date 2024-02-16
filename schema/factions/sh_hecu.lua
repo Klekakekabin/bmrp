@@ -13,18 +13,6 @@ FACTION.models = { --TODO
 	"models/humans/pm/marine.mdl",
 }
 ------------------------------------------------------------------------------------
-function FACTION:OnCharacterCreated(client, character)
-	local id = Schema:ZeroNumber(math.random(1, 99999), 5)
-	local inventory = character:GetInventory()
-
-	character:SetData("cidhecu", id)
-
-	inventory:Add("cidhecu", 1, {
-		name = character:GetName(),
-		id = id
-	})
-end
-------------------------------------------------------------------------------------
 function FACTION:OnSpawn(client)
 	local char = client:GetCharacter()
 	local inv = char:GetInventory()

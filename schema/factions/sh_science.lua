@@ -21,18 +21,6 @@ FACTION.models = { --TODO
 	"models/humans_bmcer/pm/scientist_female.mdl",
 }
 ------------------------------------------------------------------------------------
-function FACTION:OnCharacterCreated(client, character)
-	local id = Schema:ZeroNumber(math.random(1, 99999), 5)
-	local inventory = character:GetInventory()
-
-	character:SetData("cid", id)
-
-	inventory:Add("cid", 1, {
-		name = character:GetName(),
-		id = id
-	})
-end
-------------------------------------------------------------------------------------
 function FACTION:OnSpawn(client)
 	local char = client:GetCharacter()
 	local inv = char:GetInventory()
