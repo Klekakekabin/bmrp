@@ -16,36 +16,17 @@ PROGRAM.size = {x = 800, y = 600}
 
 if CLIENT then
 	function PROGRAM.build()
-		local program = desktop:Add("DFrame")
-		program:SetSize(PROGRAM.size.x, PROGRAM.size.y)
+        local program = desktop:Add("DFrame")
+        program:SetSize(PROGRAM.size.x, PROGRAM.size.y)
+        program:SetTitle(PROGRAM.name)
+        program:SetIcon(PROGRAM.icon)
+        program:RequestFocus()
 		program:Center()
-		program:RequestFocus()
-		program:SetTitle("")
-		program.Think = function(this)
-			PLUGIN.detectFocus(this)
-		end
 
-		local internet = program:Add("DHTML")
-		internet:Dock(FILL)
-		internet:SetPos(0, 20)
-		internet:SetHTML [[
-			<style>
-				body {
-					background-color: white;
-				}
-			</style>
-
-			<span>Internet browsing has been disabled to increase productivity.</span>
-		]]
-
-		local options = program:Add("DHTMLControls")
-		options:Dock(TOP)
-		options:SetHTML(internet)
-
-		local removeInput = program:Add("DPanel")
-		removeInput:SetPos(0, 25)
-		removeInput:SetSize(PROGRAM.size.x, 40)
-	end
+        local game = program:Add("DHTML")
+        game:Dock(FILL)
+        game:OpenURL("https://sites.google.com/view/black-mesa-web/landing-page")
+    end
 
 	PLUGIN:registerProgram(PROGRAM)
 end
