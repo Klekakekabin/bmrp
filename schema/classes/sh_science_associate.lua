@@ -1,7 +1,6 @@
 CLASS.name = "Research Associate"
 CLASS.faction = FACTION_SCIENCE
 CLASS.isDefault = false
-CLASS.weapons = {"weapon_bm_flashlight", "gmod_camera"}
 
 function CLASS:OnSet(client)
     client:SetHealth(100)

@@ -2,7 +2,7 @@ CLASS.name = "Fireteam Specialist"
 CLASS.faction = FACTION_HECU
 CLASS.isDefault = false
 CLASS.limit = 1
-CLASS.weapons = {"arccw_go_g3", "arccw_go_p250", "meleearts_blade_throwingknife", "weapon_vj_flaregun", "arccw_go_nade_frag", "arccw_go_nade_incendiary", "weapon_bm_sg_deployer", "weapon_bm_flashlight_milit", "weapon_rpw_binoculars"}
+CLASS.weapons = {"arccw_go_g3", "arccw_go_p250", "meleearts_blade_throwingknife", "weapon_vj_flaregun", "arccw_go_nade_frag", "arccw_go_nade_incendiary", "weapon_bm_sg_deployer"}
 
 function CLASS:OnSet(client)
     local character = client:GetCharacter()

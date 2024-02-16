@@ -1,7 +1,7 @@
 CLASS.name = "Intern"
 CLASS.faction = FACTION_OTA
 CLASS.isDefault = false
-CLASS.weapons = {"weapon_bm_flashlight", "gmod_camera", "weapon_vj_flaregun", "weapon_drr_radar"}
+CLASS.weapons = {"weapon_vj_flaregun"}
 
 function CLASS:OnSet(client)
     client:SetHealth(100)

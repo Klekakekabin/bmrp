@@ -2,7 +2,7 @@ CLASS.name = "Head of Science & Discovery"
 CLASS.faction = FACTION_SCIENCE
 CLASS.isDefault = false
 CLASS.limit = 1
-CLASS.weapons = {"weapon_bm_flashlight", "weapon_fextinguisher", "meleearts_bludgeon_crowbar", "meleearts_axe_crafted", "weapon_lvsrepair", "weapon_industrial_drill", "weapon_bm_reflector", "gmod_camera", "weapon_physcannon"}
+CLASS.weapons = {"meleearts_bludgeon_crowbar", "meleearts_axe_crafted", "weapon_lvsrepair", "weapon_industrial_drill", "weapon_bm_reflector", "weapon_physcannon"}
 
 function CLASS:OnSet(client)
     local character = client:GetCharacter()

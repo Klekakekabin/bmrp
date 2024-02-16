@@ -2,7 +2,7 @@ CLASS.name = "Anomalous Materials"
 CLASS.faction = FACTION_SCIENCE
 CLASS.isDefault = false
 CLASS.limit = 5
-CLASS.weapons = {"weapon_bm_flashlight", "weapon_fextinguisher", "meleearts_axe_crafted", "weapon_bm_reflector", "gmod_camera", "weapon_physcannon"}
+CLASS.weapons = {"meleearts_axe_crafted", "weapon_bm_reflector", "weapon_physcannon"}
 
 function CLASS:OnSet(client)
     local character = client:GetCharacter()
