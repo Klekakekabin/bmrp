@@ -9,14 +9,14 @@ function CLASS:OnSet(client)
 	if (character) then
 		character:SetModel("models/echo/hl2_antlion_pm.mdl")
 	end
-    
+    client:Spawn()
     client:SetHealth(75)
     client:SetMaxHealth(75)
     client:SetArmor(0)
     client:SetMaxArmor(0)
     --client:SetSlowWalkSpeed(100)
     --client:SetWalkSpeed(160)
-    client:Spawn()
+    
 end
 
 function CLASS:CanSwitchTo(client)

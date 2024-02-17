@@ -9,14 +9,14 @@ function CLASS:OnSet(client)
 	if (character) then
 		character:SetModel("models/player/bm_agrunt.mdl")
 	end
-    
+    client:Spawn()
     client:SetHealth(400)
     client:SetMaxHealth(400)
     client:SetArmor(250)
     client:SetMaxArmor(250)
     --client:SetSlowWalkSpeed(100)
     --client:SetWalkSpeed(160)
-    client:Spawn()
+    
 end
 
 function CLASS:CanSwitchTo(client)

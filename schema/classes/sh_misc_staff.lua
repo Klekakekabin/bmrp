@@ -7,12 +7,12 @@ function CLASS:OnSet(client)
 	if (character) then
 		character:SetModel("models/player/infoplayerrealism.mdl")
 	end
-    
+    client:Spawn()
     client:SetHealth(9999999999)
     client:SetMaxHealth(9999999999)
     client:SetArmor(9999999999)
     client:SetMaxArmor(9999999999)
-    client:Spawn()
+    
 end
 
 function CLASS:CanSwitchTo(client)

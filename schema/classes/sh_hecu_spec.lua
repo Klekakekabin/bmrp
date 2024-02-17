@@ -9,14 +9,14 @@ function CLASS:OnSet(client)
 	if (character) then
 		character:SetModel("models/humans_bmcer/pm/marine_engineer.mdl")
 	end
-    
+    client:Spawn()
     client:SetHealth(100)
     client:SetMaxHealth(100)
     client:SetArmor(150)
     client:SetMaxArmor(150)
     client:SetSlowWalkSpeed(100)
     client:SetWalkSpeed(160)
-    client:Spawn()
+    
 end
 
 function CLASS:OnSet(client)
