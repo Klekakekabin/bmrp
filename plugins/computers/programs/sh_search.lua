@@ -92,8 +92,6 @@ if CLIENT then
 		resultList:AddColumn("Name")
         if journalArchive then
             resultList:AddColumn("Created"):SetMaxWidth(150)
-        else
-		    resultList:AddColumn("Division"):SetMaxWidth(150)
         end
 
 		local okButton = program:Add("DButton")
@@ -105,7 +103,7 @@ if CLIENT then
                 local lines = {}
                 for line, object in pairs(resultList:GetSelected()) do
                     line = resultList:GetLine(line)
-                    lines[#lines + 1] = {char=line:GetColumnText(3), name=line:GetColumnText(1), faction=line:GetColumnText(2)}
+                    lines[#lines + 1] = {char=line:GetColumnText(2), name=line:GetColumnText(1)}
                 end
                 view(lines)
 
@@ -114,7 +112,7 @@ if CLIENT then
                 local line = resultList:GetSelectedLine()
                 if line then
                     line = resultList:GetLine(line)
-                    view(line:GetColumnText(3), line:GetColumnText(1), line:GetColumnText(2))
+                    view(line:GetColumnText(2), line:GetColumnText(1))
                     program:Remove()
                 end
             end

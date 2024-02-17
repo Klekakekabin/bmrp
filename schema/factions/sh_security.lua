@@ -21,7 +21,7 @@ function FACTION:OnSpawn(client)
 	local inv = char:GetInventory()
 
 	-- Declare table 
-	local itemFilter = {'cid', 'driverslicense', 'flashlight', 'radio', 'handcuffs'} -- ad anyting else
+	local itemFilter = {'cid', 'flashlight', 'radio', 'handcuffs'} -- ad anyting else
 	-- First use HasItems takes in a table
 	if not inv:HasItems(itemFilter) then
 		local id = Schema:ZeroNumber(math.random(1, 99999), 5)
@@ -32,10 +32,6 @@ function FACTION:OnSpawn(client)
 	    inv:Add("cid", 1, { 
             name = char:GetName(),
             id = id
-	    })
-
-	    inv:Add("driverslicense", 1, { 
-            name = char:GetName(),
 	    })
 
 		inv:Add("flashlight", 1)
