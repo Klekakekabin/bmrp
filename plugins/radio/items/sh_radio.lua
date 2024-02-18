@@ -3,7 +3,6 @@ ITEM.model = "models/deadbodies/dead_male_civilian_radio.mdl"
 ITEM.width = 1
 ITEM.height = 1
 ITEM.weight = 0.6
-ITEM.category = "Miscellaneous"
 ITEM.noBusiness = true
 ITEM.exRender = true
 ITEM.iconCam = {

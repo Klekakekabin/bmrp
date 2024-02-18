@@ -8,7 +8,7 @@
 
 ITEM.name = "Book Base"
 ITEM.description = "A Base Book."
-ITEM.category = "Literature"
+ITEM.category = "Documents"
 ITEM.model = Model("models/props_lab/bindergreenlabel.mdl")
 ITEM.width = 1
 ITEM.height = 1

@@ -2,6 +2,7 @@ ITEM.name = "Black Mesa Visitor Pass"
 ITEM.model = Model("models/props_tse/props_basement/key_card01.mdl")
 ITEM.description = "A visitor pass for the Black Mesa Research Facility, numbered Visitor #%s, assigned to %s."
 ITEM.noBusiness = true
+ITEM.category = "Documents"
 ITEM.weight = 0.2
 
 function ITEM:GetDescription()
