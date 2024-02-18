@@ -1,11 +1,11 @@
-ITEM.name = "Model 870"
-ITEM.description = "A shotgun with the serial number #%s engraved upon the frame."
+ITEM.name = "G3"
+ITEM.description = "A rifle with the serial number #%s engraved upon the frame."
 ITEM.model = "models/weapons/w_binocularsbp.mdl"
-ITEM.class = "arccw_go_870"
-ITEM.weaponCategory = "shotgun"
+ITEM.class = "arccw_go_g3"
+ITEM.weaponCategory = "rifle"
 ITEM.width = 3
 ITEM.height = 1
-ITEM.weight = 9
+ITEM.weight = 13
 ITEM.noBusiness = true
 
 function ITEM:GetDescription()
