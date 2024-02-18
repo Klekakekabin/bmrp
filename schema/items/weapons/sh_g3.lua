@@ -1,6 +1,6 @@
 ITEM.name = "G3"
 ITEM.description = "A rifle with the serial number #%s engraved upon the frame."
-ITEM.model = "models/weapons/w_binocularsbp.mdl"
+ITEM.model = "models/weapons/arccw_go/v_pist_fiveseven.mdl"
 ITEM.class = "arccw_go_g3"
 ITEM.weaponCategory = "rifle"
 ITEM.width = 3

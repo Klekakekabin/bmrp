@@ -1,6 +1,6 @@
 ITEM.name = "M92FS"
 ITEM.description = "A semi-automatic pistol with the serial number #%s engraved upon the frame."
-ITEM.model = "models/weapons/w_binocularsbp.mdl"
+ITEM.model = "models/weapons/arccw_go/v_pist_m9.mdl"
 ITEM.class = "arccw_go_m9"
 ITEM.weaponCategory = "pistol"
 ITEM.width = 1

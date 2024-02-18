@@ -1,0 +1,9 @@
+ITEM.name = "M84 Stun"
+ITEM.description = "A non-lethal grenade capable of stunning targets."
+ITEM.model = "models/weapons/arccw_go/w_eq_flashbang_thrown.mdl"
+ITEM.class = "arccw_go_nade_flash"
+ITEM.weaponCategory = "utility"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.weight = 1
+ITEM.noBusiness = true

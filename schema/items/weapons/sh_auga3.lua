@@ -1,6 +1,6 @@
 ITEM.name = "AUG A3"
 ITEM.description = "An automatic rifle with the serial number #%s engraved upon the frame."
-ITEM.model = "models/weapons/w_binocularsbp.mdl"
+ITEM.model = "models/weapons/arccw_go/v_rif_aug.mdl"
 ITEM.class = "arccw_go_aug"
 ITEM.weaponCategory = "rifle"
 ITEM.width = 1

@@ -1,6 +1,6 @@
 ITEM.name = "PP-9 Bizon-2"
 ITEM.description = "A submachine gun with the serial number #%s engraved upon the frame."
-ITEM.model = "models/weapons/w_binocularsbp.mdl"
+ITEM.model = "models/weapons/arccw_go/v_smg_bizon.mdl"
 ITEM.class = "arccw_go_bizon"
 ITEM.weaponCategory = "smg"
 ITEM.width = 2

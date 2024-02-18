@@ -1,6 +1,6 @@
 ITEM.name = "SSG08"
 ITEM.description = "A sniper with the serial number #%s engraved upon the frame."
-ITEM.model = "models/weapons/w_binocularsbp.mdl"
+ITEM.model = "models/weapons/arccw_go/v_snip_ssg08.mdl"
 ITEM.class = "arccw_go_ssg08"
 ITEM.weaponCategory = "sniper"
 ITEM.width = 3

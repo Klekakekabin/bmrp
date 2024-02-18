@@ -1,0 +1,9 @@
+ITEM.name = "Molotov Cocktail."
+ITEM.description = "A rag soaked in alcohol fit into a bottle, ready for ignition."
+ITEM.model = "models/weapons/arccw_go/w_eq_molotov_thrown.mdl"
+ITEM.class = "arccw_go_nade_molotov"
+ITEM.weaponCategory = "utility"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.weight = 0.6
+ITEM.noBusiness = true

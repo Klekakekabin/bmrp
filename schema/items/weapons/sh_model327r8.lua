@@ -1,6 +1,6 @@
 ITEM.name = "Model 327 R8"
 ITEM.description = "A semi-automatic revolver with the serial number #%s engraved upon the frame."
-ITEM.model = "models/weapons/w_binocularsbp.mdl"
+ITEM.model = "models/weapons/arccw_go/v_pist_r8.mdl"
 ITEM.class = "arccw_go_r8"
 ITEM.weaponCategory = "pistol"
 ITEM.width = 1

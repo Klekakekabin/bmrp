@@ -1,6 +1,6 @@
 ITEM.name = "M249 SAW"
 ITEM.description = "A light machine gun with the serial number #%s engraved upon the frame."
-ITEM.model = "models/weapons/w_binocularsbp.mdl"
+ITEM.model = "models/weapons/arccw_go/v_mach_m249para.mdl"
 ITEM.class = "arccw_go_m249para"
 ITEM.weaponCategory = "lmg"
 ITEM.width = 3

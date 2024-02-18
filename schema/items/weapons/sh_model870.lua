@@ -1,6 +1,6 @@
 ITEM.name = "Model 870"
 ITEM.description = "A shotgun with the serial number #%s engraved upon the frame."
-ITEM.model = "models/weapons/w_binocularsbp.mdl"
+ITEM.model = "models/weapons/arccw_go/v_shot_870.mdl"
 ITEM.class = "arccw_go_870"
 ITEM.weaponCategory = "shotgun"
 ITEM.width = 3

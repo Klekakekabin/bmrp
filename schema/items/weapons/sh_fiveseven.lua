@@ -1,6 +1,6 @@
 ITEM.name = "Five-SeveN"
 ITEM.description = "A semi-automatic pistol with the serial number #%s engraved upon the frame."
-ITEM.model = "models/weapons/w_binocularsbp.mdl"
+ITEM.model = "models/weapons/arccw_go/v_pist_fiveseven.mdl"
 ITEM.class = "arccw_go_fiveseven"
 ITEM.weaponCategory = "pistol"
 ITEM.width = 1

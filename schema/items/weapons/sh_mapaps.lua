@@ -1,0 +1,9 @@
+ITEM.name = "MAP-APS"
+ITEM.description = "A tactical device capable of intercepting and destroying incoming projectiles."
+ITEM.model = "models/weapons/arccw/w_eq_mapaps.mdl"
+ITEM.class = "arccw_eq_mapaps"
+ITEM.weaponCategory = "utility"
+ITEM.width = 2
+ITEM.height = 2
+ITEM.weight = 6.3
+ITEM.noBusiness = true
