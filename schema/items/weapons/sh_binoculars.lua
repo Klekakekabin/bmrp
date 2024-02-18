@@ -1,6 +1,6 @@
 ITEM.name = "Binoculars"
 ITEM.description = "Used to view an area from a distance."
-ITEM.model = "models/weapons/w_binoculars_american.mdl"
+ITEM.model = "models/weapons/w_binocularsbp.mdl"
 ITEM.class = "weapon_rpw_binoculars"
 ITEM.weaponCategory = "utility"
 ITEM.width = 1
