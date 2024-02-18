@@ -5,6 +5,6 @@ ITEM.class = "weapon_pathway_marker"
 ITEM.weaponCategory = "utility"
 ITEM.width = 2
 ITEM.height = 4
-ITEM.weight = 8
+ITEM.weight = 8.4
 ITEM.noBusiness = true
 

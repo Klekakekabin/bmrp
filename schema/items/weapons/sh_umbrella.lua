@@ -5,6 +5,6 @@ ITEM.class = "weapon_tfc_umbrella"
 ITEM.weaponCategory = "utility"
 ITEM.width = 1
 ITEM.height = 2
-ITEM.weight = 3
+ITEM.weight = 3.3
 ITEM.noBusiness = true
 

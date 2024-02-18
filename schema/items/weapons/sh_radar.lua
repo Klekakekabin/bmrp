@@ -5,6 +5,6 @@ ITEM.class = "weapon_drr_radar"
 ITEM.weaponCategory = "utility"
 ITEM.width = 2
 ITEM.height = 1
-ITEM.weight = 4
+ITEM.weight = 4.25
 ITEM.noBusiness = true
 

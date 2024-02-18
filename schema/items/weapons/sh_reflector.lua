@@ -5,6 +5,6 @@ ITEM.class = "weapon_bm_reflector"
 ITEM.weaponCategory = "utility"
 ITEM.width = 2
 ITEM.height = 2
-ITEM.weight = 6
+ITEM.weight = 6.75
 ITEM.noBusiness = true
 
