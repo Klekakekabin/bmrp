@@ -5,6 +5,7 @@ ITEM.height = 1
 ITEM.weight = 0.6
 ITEM.noBusiness = true
 ITEM.exRender = true
+ITEM.category = "Utility"
 ITEM.iconCam = {
 	pos = Vector(150, 127.63716125488, 103),
 	ang = Angle(25, 220, 0),

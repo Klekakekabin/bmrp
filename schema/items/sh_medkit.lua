@@ -4,6 +4,7 @@ ITEM.model = "models/weapons/bm/w_medkit.mdl"
 ITEM.width = 2
 ITEM.height = 2
 ITEM.noBusiness = true
+ITEM.category = "Utility"
 ITEM.weight = 2
 
 ITEM.functions.Place = {

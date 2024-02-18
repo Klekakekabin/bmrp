@@ -3,6 +3,7 @@ ITEM.name = "Zip Tie"
 ITEM.description = "An orange zip-tie used to restrict people."
 ITEM.noBusiness = true
 ITEM.weight = 1
+ITEM.category = "Utility"
 ITEM.model = "models/items/crossbowrounds.mdl"
 ITEM.functions.Use = {
 	OnRun = function(itemTable)

@@ -19,11 +19,11 @@ CAMI.RegisterPrivilege({
 function PLUGIN:GetExpectedIcon( s )
 	local i = {
 		["Ammunition"] = "icon16/tab.png", -- :shrug:
-		["Clothing"] = "icon16/user_suit.png",
+		["Outfit"] = "icon16/user_suit.png",
 		["Consumables"] = "icon16/pill.png",
 		["Medical"] = "icon16/heart.png",
 		["misc"] = "icon16/error.png",
-		["Permits"] = "icon16/note.png",
+		["Documents"] = "icon16/note.png",
 		["Utility"] = "icon16/package.png",
 		["Weapons"] = "icon16/gun.png",
 

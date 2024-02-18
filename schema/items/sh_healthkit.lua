@@ -4,6 +4,7 @@ ITEM.model = "models/items/healthk1t.mdl"
 ITEM.width = 3
 ITEM.height = 3
 ITEM.noBusiness = true
+ITEM.category = "Utility"
 ITEM.weight = 4
 
 ITEM.functions.Place = {

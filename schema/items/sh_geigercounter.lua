@@ -3,6 +3,7 @@ ITEM.description = "Used to detect and measure ionizing radiation."
 ITEM.model = "models/props_generic/geigercounter.mdl"
 ITEM.width = 1
 ITEM.height = 1
+ITEM.category = "Utility"
 ITEM.noBusiness = true
 ITEM.weight = 2.5
 

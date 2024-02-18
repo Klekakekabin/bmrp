@@ -3,6 +3,7 @@ ITEM.description = "A piece of thick paper, quite fancy. Looks official."
 ITEM.model = "models/props_lab/clipboard.mdl"
 ITEM.width = 1
 ITEM.height = 1
+ITEM.category = "Documents"
 ITEM.weight = 0.1
 ITEM.noBusiness = true
 

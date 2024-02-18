@@ -4,6 +4,7 @@ ITEM.model = "models/props_c17/light_floodlight02_off.mdl"
 ITEM.width = 3
 ITEM.height = 3
 ITEM.noBusiness = true
+ITEM.category = "Utility"
 ITEM.weight = 15
 
 ITEM.functions.Place = {

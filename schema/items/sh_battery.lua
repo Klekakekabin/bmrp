@@ -3,6 +3,7 @@ ITEM.description = "A battery used to charge the Hazardous Environment suit."
 ITEM.model = "models/weapons/w_battery.mdl"
 ITEM.width = 2
 ITEM.height = 2
+ITEM.category = "Utility"
 ITEM.noBusiness = true
 ITEM.weight = 3
 

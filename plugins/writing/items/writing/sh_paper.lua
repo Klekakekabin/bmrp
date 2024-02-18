@@ -7,6 +7,7 @@ ITEM.description = "A scrap piece of paper, %s."
 ITEM.noBusiness = true
 ITEM.model = Model("models/props_c17/paper01.mdl")
 ITEM.width = 1
+ITEM.category = "Documents"
 ITEM.height = 1
 ITEM.weight = 0.005
 ITEM.bAllowMultiCharacterInteraction = true

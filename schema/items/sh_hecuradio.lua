@@ -4,6 +4,7 @@ ITEM.model = "models/props_generic/bm_supplycrate01.mdl"
 ITEM.width = 2
 ITEM.height = 2
 ITEM.noBusiness = true
+ITEM.category = "Utility"
 ITEM.weight = 8
 
 ITEM.functions.Place = {

@@ -4,6 +4,7 @@ ITEM.model = "models/items/bat1ery.mdl"
 ITEM.width = 2
 ITEM.height = 2
 ITEM.noBusiness = true
+ITEM.category = "Utility"
 ITEM.weight = 6
 
 ITEM.functions.Place = {

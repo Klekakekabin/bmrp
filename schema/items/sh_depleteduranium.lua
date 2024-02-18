@@ -3,6 +3,7 @@ ITEM.description = "Depleted uranium contained within a lead case."
 ITEM.model = "models/weapons/w_gaussammo.mdl"
 ITEM.width = 3
 ITEM.height = 1
+ITEM.category = "Utility"
 ITEM.noBusiness = true
 ITEM.weight = 8
 
