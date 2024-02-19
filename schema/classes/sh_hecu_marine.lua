@@ -2,7 +2,7 @@ CLASS.name = "Fireteam Marine"
 CLASS.faction = FACTION_HECU
 CLASS.isDefault = false
 CLASS.limit = 3
-CLASS.weapons = {"arccw_go_sg556", "arccw_go_usp", "meleearts_blade_throwingknife", "weapon_vj_flaregun", "arccw_go_nade_smoke", "weapon_breachingcharge", "weapon_bm_tripmine"}
+CLASS.weapons = {}
 
 function CLASS:OnSet(client)
     local character = client:GetCharacter()
@@ -24,7 +24,7 @@ function CLASS:OnSet(client)
 	local inv = char:GetInventory()
 
 	-- Declare table 
-	local itemFilter = {'firearmslicense'} -- ad anyting else
+	local itemFilter = {'firearmslicense', 'sigsg556', 'usp45', 'bowieknife', 'flaregun', 'model5210smoke', 'breachingcharges', 'tripmine'} -- ad anyting else
 	-- First use HasItems takes in a table
 	if not inv:HasItems(itemFilter) then
 		local id = Schema:ZeroNumber(math.random(1, 9999), 5)
@@ -35,6 +35,20 @@ function CLASS:OnSet(client)
 	    inv:Add("firearmslicense", 1, { 
             name = char:GetName(),
 	    })
+
+		inv:Add("sigsg556", 1)
+
+		inv:Add("usp45", 1)
+
+		inv:Add("bowieknife", 1)
+
+		inv:Add("flaregun", 1)
+
+		inv:Add("model5210smoke", 1)
+
+		inv:Add("breachingcharges", 1)
+
+		inv:Add("tripmine", 1)
 	end
 end
 

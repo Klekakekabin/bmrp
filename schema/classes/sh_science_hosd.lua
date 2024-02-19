@@ -2,7 +2,7 @@ CLASS.name = "Head of Science & Discovery"
 CLASS.faction = FACTION_SCIENCE
 CLASS.isDefault = false
 CLASS.limit = 1
-CLASS.weapons = {"meleearts_bludgeon_crowbar", "meleearts_axe_crafted", "weapon_lvsrepair", "weapon_industrial_drill", "weapon_bm_reflector", "weapon_physcannon"}
+CLASS.weapons = {}
 
 function CLASS:OnSet(client)
     local character = client:GetCharacter()
@@ -24,7 +24,7 @@ function CLASS:OnSet(client)
 	local inv = char:GetInventory()
 
 	-- Declare table 
-	local itemFilter = {'firearmslicense', 'hevcertificate'} -- ad anyting else
+	local itemFilter = {'firearmslicense', 'hevcertificate', 'crowbar', 'repairtorch', 'drill', 'gravitygun', 'm92fs'} -- ad anyting else
 	-- First use HasItems takes in a table
 	if not inv:HasItems(itemFilter) then
 		local id = Schema:ZeroNumber(math.random(1, 9999), 5)
@@ -40,6 +40,16 @@ function CLASS:OnSet(client)
 	    inv:Add("hevcertificate", 1, { 
             name = char:GetName(),
 	    })
+
+		inv:Add("crowbar", 1)
+
+		inv:Add("repairtorch", 1)
+
+		inv:Add("drill", 1)
+
+		inv:Add("gravitygun", 1)
+
+		inv:Add("m92fs", 1)
 	end
 end
 

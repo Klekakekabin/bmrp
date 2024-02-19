@@ -2,7 +2,7 @@ CLASS.name = "Research and Development"
 CLASS.faction = FACTION_SCIENCE
 CLASS.isDefault = false
 CLASS.limit = 5
-CLASS.weapons = {"meleearts_bludgeon_crowbar", "weapon_lvsrepair", "weapon_industrial_drill", "weapon_physcannon"}
+CLASS.weapons = {}
 
 function CLASS:OnSet(client)
     local character = client:GetCharacter()
@@ -17,6 +17,30 @@ function CLASS:OnSet(client)
     client:SetSlowWalkSpeed(100)
     client:SetWalkSpeed(160)
     
+end
+
+function CLASS:OnSet(client)
+	local char = client:GetCharacter()
+	local inv = char:GetInventory()
+
+	-- Declare table 
+	local itemFilter = {'crowbar', 'repairtorch', 'drill', 'gravitygun'} -- ad anyting else
+	-- First use HasItems takes in a table
+	if not inv:HasItems(itemFilter) then
+		local id = Schema:ZeroNumber(math.random(1, 9999), 5)
+		--for _, v in pairs(itemFilter) do --Going to use this function only for sid for now
+		--	inv:Add(v, 1)
+		--end
+
+		inv:Add("crowbar", 1)
+
+		inv:Add("repairtorch", 1)
+
+		inv:Add("drill", 1)
+
+		inv:Add("gravitygun", 1)
+
+	end
 end
 
 function CLASS:CanSwitchTo(client)

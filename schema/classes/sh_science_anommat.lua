@@ -2,7 +2,7 @@ CLASS.name = "Anomalous Materials"
 CLASS.faction = FACTION_SCIENCE
 CLASS.isDefault = false
 CLASS.limit = 5
-CLASS.weapons = {"meleearts_axe_crafted", "weapon_bm_reflector", "weapon_physcannon"}
+CLASS.weapons = {}
 
 function CLASS:OnSet(client)
     local character = client:GetCharacter()
@@ -17,6 +17,28 @@ function CLASS:OnSet(client)
     client:SetSlowWalkSpeed(100)
     client:SetWalkSpeed(160)
     
+end
+
+function CLASS:OnSet(client)
+	local char = client:GetCharacter()
+	local inv = char:GetInventory()
+
+	-- Declare table 
+	local itemFilter = {'cleaver', 'reflector', 'gravitygun'} -- ad anyting else
+	-- First use HasItems takes in a table
+	if not inv:HasItems(itemFilter) then
+		local id = Schema:ZeroNumber(math.random(1, 9999), 5)
+		--for _, v in pairs(itemFilter) do --Going to use this function only for sid for now
+		--	inv:Add(v, 1)
+		--end
+
+		inv:Add("cleaver", 1)
+
+		inv:Add("reflector", 1)
+
+		inv:Add("gravitygun", 1)
+        
+	end
 end
 
 function CLASS:CanSwitchTo(client)

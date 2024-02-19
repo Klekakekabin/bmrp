@@ -1,9 +1,9 @@
-ITEM.name = "Glock 17"
+ITEM.name = "USP-45"
 ITEM.description = "A semi-automatic pistol."
-ITEM.model = "models/weapons/arccw_go/v_pist_glock.mdl"
-ITEM.class = "arccw_go_glock"
+ITEM.model = "models/weapons/arccw_go/v_pist_usp.mdl"
+ITEM.class = "arccw_go_usp"
 ITEM.weaponCategory = "pistol"
 ITEM.width = 1
 ITEM.height = 1
-ITEM.weight = 4.25
+ITEM.weight = 3.5
 ITEM.noBusiness = true

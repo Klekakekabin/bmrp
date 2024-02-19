@@ -2,7 +2,7 @@ CLASS.name = "Operations Manager"
 CLASS.faction = FACTION_OTA
 CLASS.isDefault = false
 CLASS.limit = 1
-CLASS.weapons = {"weapon_vj_flaregun", "arccw_go_r8", "weapon_stungun"}
+CLASS.weapons = {}
 
 function CLASS:OnSet(client)
     local character = client:GetCharacter()
@@ -24,7 +24,7 @@ function CLASS:OnSet(client)
 	local inv = char:GetInventory()
 
 	-- Declare table 
-	local itemFilter = {'firearmslicense'} -- ad anyting else
+	local itemFilter = {'firearmslicense', 'flaregun', 'model327r8', 'stungun'} -- ad anyting else
 	-- First use HasItems takes in a table
 	if not inv:HasItems(itemFilter) then
 		local id = Schema:ZeroNumber(math.random(1, 9999), 5)
@@ -35,6 +35,13 @@ function CLASS:OnSet(client)
 	    inv:Add("firearmslicense", 1, { 
             name = char:GetName(),
 	    })
+
+		inv:Add("flaregun", 1)
+
+		inv:Add("stungun", 1)
+
+		inv:Add("model327r8", 1)
+
 	end
 end
 
