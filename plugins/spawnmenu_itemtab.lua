@@ -18,7 +18,6 @@ CAMI.RegisterPrivilege({
 
 function PLUGIN:GetExpectedIcon( s )
 	local i = {
-		["Ammunition"] = "icon16/tab.png", -- :shrug:
 		["Outfit"] = "icon16/user_suit.png",
 		["Consumables"] = "icon16/pill.png",
 		["Medical"] = "icon16/heart.png",
@@ -26,7 +25,9 @@ function PLUGIN:GetExpectedIcon( s )
 		["Documents"] = "icon16/note.png",
 		["Utility"] = "icon16/package.png",
 		["Weapons"] = "icon16/gun.png",
-
+		["ArcCW Weapons"] = "icon16/gun.png",
+		["ArcCW Grenades"] = "icon16/package.png",
+		["ArcCW Ammo"] = "icon16/tab.png",
 	};
 	return hook.Run( "GetIconsForSpawnMenuItems", s ) or i[s] or "icon16/folder.png";
 end
