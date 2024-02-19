@@ -4,6 +4,6 @@ ITEM.model = "models/weapons/arccw_go/v_rif_scar.mdl"
 ITEM.class = "arccw_go_scar"
 ITEM.weaponCategory = "rifle"
 ITEM.width = 3
-ITEM.height = 1
+ITEM.height = 2
 ITEM.weight = 11.75
 ITEM.noBusiness = true

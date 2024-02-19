@@ -4,6 +4,6 @@ ITEM.model = "models/weapons/arccw_go/v_shot_870.mdl"
 ITEM.class = "arccw_go_870"
 ITEM.weaponCategory = "shotgun"
 ITEM.width = 3
-ITEM.height = 1
+ITEM.height = 2
 ITEM.weight = 9
 ITEM.noBusiness = true

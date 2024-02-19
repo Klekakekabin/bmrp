@@ -24,7 +24,7 @@ function CLASS:OnSet(client)
 	local inv = char:GetInventory()
 
 	-- Declare table 
-	local itemFilter = {'firearmslicense', 'hevcertificate', 'crowbar', 'repairtorch', 'drill', 'gravitygun', 'm92fs'} -- ad anyting else
+	local itemFilter = {'firearmslicense', 'hevcertificate', 'crowbar', 'repairtorch', 'drill', 'gravitygun', 'model327r8'} -- ad anyting else
 	-- First use HasItems takes in a table
 	if not inv:HasItems(itemFilter) then
 		local id = Schema:ZeroNumber(math.random(1, 9999), 5)
@@ -49,7 +49,7 @@ function CLASS:OnSet(client)
 
 		inv:Add("gravitygun", 1)
 
-		inv:Add("m92fs", 1)
+		inv:Add("model327r8", 1)
 	end
 end
 

@@ -4,6 +4,6 @@ ITEM.model = "models/weapons/arccw_go/v_pist_deagle.mdl"
 ITEM.class = "arccw_go_deagle"
 ITEM.weaponCategory = "pistol"
 ITEM.width = 2
-ITEM.height = 1
+ITEM.height = 2
 ITEM.weight = 4.8
 ITEM.noBusiness = true

@@ -119,36 +119,6 @@ function PLUGIN:InitHooks()
 	hook.Remove("PlayerSpawn", "ArcCW_SpawnAttInv")
 	hook.Remove("PlayerCanPickupWeapon", "ArcCW_PlayerCanPickupWeapon")
 
-	-- HUD
-	if (CLIENT) then
-		local hide = {
-			["CHudHealth"] = true,
-			["CHudBattery"] = true,
-			["CHudAmmo"] = true,
-			["CHudSecondaryAmmo"] = true,
-		}
-
-		hook.Add("HUDShouldDraw", "ArcCW_HideHUD", function(name)
-			if !hide[name] then return end
-			if !LocalPlayer():IsValid() then return end
-			if !LocalPlayer():GetActiveWeapon().ArcCW then return end
-			if ArcCW.HUDElementConVars[name] and ArcCW.HUDElementConVars[name] == false then return end
-
-			return false
-		end)
-
-		ArcCW.PollingDefaultHUDElements = false
-		ArcCW.HUDElementConVars = {
-			["CHudAmmo"] = true,
-			["CHudSecondaryAmmo"] = true,
-		}
-
-		function ArcCW:ShouldDrawHUDElement(ele)
-			if (ArcCW.HUDElementConVars[ele]) then return true end
-			return false
-		end
-	end
-
 	function ArcCW:PlayerGetAtts(client, att)
 		if (att == "") then
 			return 999

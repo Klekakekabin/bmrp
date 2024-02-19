@@ -4,6 +4,6 @@ ITEM.model = "models/weapons/arccw_go/v_smg_mac10.mdl"
 ITEM.class = "arccw_go_mac10"
 ITEM.weaponCategory = "smg"
 ITEM.width = 2
-ITEM.height = 1
+ITEM.height = 2
 ITEM.weight = 6.5
 ITEM.noBusiness = true
