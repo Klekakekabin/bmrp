@@ -14,6 +14,7 @@ function CLASS:OnSet(client)
     client:SetMaxHealth(300)
     client:SetArmor(150)
     client:SetMaxArmor(150)
+    client:SetPos(Vector(-10350,12773,-6750))
     --client:SetSlowWalkSpeed(100)
     --client:SetWalkSpeed(160)
     
