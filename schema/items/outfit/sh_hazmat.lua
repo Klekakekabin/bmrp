@@ -6,4 +6,4 @@ ITEM.width = 2
 ITEM.height = 2
 ITEM.weight = 6
 
-ITEM.replacements = "models/humans_bmcer/pm/scientist_cleansuit.mdl"
+ITEM.replacements = "models/humans_bmcer/pm/kleka/scientist_cleansuit.mdl"

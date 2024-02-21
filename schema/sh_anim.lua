@@ -22,6 +22,8 @@ local models = {
 	"models/humans/pm/engineer.mdl",
 	"models/humans/pm/engineer_female.mdl",
 	"models/humans_bmcer/pm/scientist_cleansuit.mdl",
+	"models/humans_bmcer/pm/kleka/scientist_cleansuit.mdl",
+	"models/humans_bmcer/pm/kleka/scientist_cleansuit_hurt.mdl",
 
 	-- Black Mesa Security Force
 
@@ -48,6 +50,8 @@ local models = {
 	"models/sirgibs/ragdolls/bms_citizens/female_citizen_player.mdl",
 	"models/sirgibs/ragdolls/bms_citizens/male_refugee_player.mdl",
 	"models/sirgibs/ragdolls/bms_citizens/female_refugee_player.mdl",
+	"models/humans_bmcer/pm/scientist_male_hoodiejeans.mdl",
+	"models/humans_bmcer/pm/scientist_female_zipper.mdl",
 
 	-- Hazardous Environment Combat Unit
 
