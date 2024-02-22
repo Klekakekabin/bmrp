@@ -205,6 +205,7 @@ local models = {
 	"models/sentry/senvmaf/senvmaf2male8pm.mdl",
 	"models/sentry/senvmaf/senvmaf3male6pm.mdl",
 	"models/sentry/senvmaf/senvmaf4male2pm.mdl",
+	"models/dannio/atf/atfpolice.mdl",
 
 	-- Staff
 	
